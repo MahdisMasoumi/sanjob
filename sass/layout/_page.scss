@@ -1,0 +1,40 @@
+.page__logoBox {
+  animation-name: fadeIn;
+  animation-name: moveInTop;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in;
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  @include respond(phone) {
+    margin-top: 25rem;
+  }
+
+  &-img {
+    width: 20rem;
+  }
+}
+
+.page__searchBox {
+  display: flex;
+  justify-content: center;
+  &-input {
+    background-color: #f7dec1;
+    border-radius: 1rem;
+    width: 45rem;
+    height: 1.3rem;
+    padding: 10px 30px 10px 10px;
+    background-image: url("../img/search_icon.png");
+    background-size: 1.7rem;
+    background-position: 95% center;
+    background-repeat: no-repeat;
+    border: 1px solid #ccc;
+    outline: none;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    @include respond(phone) {
+      width: 32rem;
+      margin-top: 5rem;
+    }
+  }
+}

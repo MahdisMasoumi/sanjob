@@ -1,0 +1,89 @@
+.character {
+  display: flex;
+  justify-content: center;
+
+  &__row {
+    display: block;
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+
+  &__link {
+    text-decoration: none;
+
+    &-adwin {
+      height: 14rem;
+      transition: all 0.5s ease;
+      animation-name: fadeIn;
+      animation-duration: 2s;
+      animation-timing-function: ease;
+      animation-name: moveInLeft;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+    &-qimon {
+      height: 14rem;
+      transition: all 0.5s ease;
+      animation-name: fadeIn;
+      animation-name: moveInBottom;
+      animation-duration: 2s;
+      animation-timing-function: ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    &-ricky {
+      height: 14rem;
+      margin-left: 1rem;
+      transition: all 0.5s ease;
+      animation-name: fadeIn;
+      animation-name: moveInRight;
+      animation-duration: 2s;
+      animation-timing-function: ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.character__name {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  background-color: rgb(244, 211, 176);
+  border-radius: 0.7rem;
+  margin-top: 1rem;
+  font-weight: 500;
+  font-size: 1.7rem;
+  border: 1px solid rgb(150, 147, 143);
+  color: rgb(70, 32, 8);
+
+  &-1 {
+    margin-right: 0.8rem;
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+  }
+  &-2 {
+    margin-left: 0.1rem;
+    animation-name: moveInBottom;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+  }
+  &-3 {
+    margin-left: 1rem;
+    animation-name: moveInRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+  }
+  &-span {
+    font-size: x-small;
+    font-weight: 300;
+    color: rgb(43, 20, 6);
+  }
+}

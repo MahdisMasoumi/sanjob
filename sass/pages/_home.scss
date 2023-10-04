@@ -1,0 +1,32 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.main {
+  height: 100vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(black, 0),
+      rgba(black, 0)
+    ),
+    url(../img/sanjob_background.png);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  @include respond(phone) {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(black, 0),
+        rgba(black, 0)
+      ),
+      url(../img/back-s.png);
+    background-size: cover;
+    background-position: top;
+  }
+}

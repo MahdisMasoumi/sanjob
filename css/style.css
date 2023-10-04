@@ -1,0 +1,224 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(0.5rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-0.5rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  80% {
+    transform: translateY(-0.5rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+html {
+  font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+.character {
+  display: flex;
+  justify-content: center; }
+  .character__row {
+    display: block;
+    margin-top: 5rem;
+    margin-right: 2rem; }
+  .character__link {
+    text-decoration: none; }
+    .character__link-adwin {
+      height: 14rem;
+      transition: all 0.5s ease;
+      animation-name: fadeIn;
+      animation-duration: 2s;
+      animation-timing-function: ease;
+      animation-name: moveInLeft; }
+      .character__link-adwin:hover {
+        transform: scale(1.1); }
+    .character__link-qimon {
+      height: 14rem;
+      transition: all 0.5s ease;
+      animation-name: fadeIn;
+      animation-name: moveInBottom;
+      animation-duration: 2s;
+      animation-timing-function: ease; }
+      .character__link-qimon:hover {
+        transform: scale(1.1); }
+    .character__link-ricky {
+      height: 14rem;
+      margin-left: 1rem;
+      transition: all 0.5s ease;
+      animation-name: fadeIn;
+      animation-name: moveInRight;
+      animation-duration: 2s;
+      animation-timing-function: ease; }
+      .character__link-ricky:hover {
+        transform: scale(1.1); }
+
+.character__name {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  background-color: #f4d3b0;
+  border-radius: 0.7rem;
+  margin-top: 1rem;
+  font-weight: 500;
+  font-size: 1.7rem;
+  border: 1px solid #96938f;
+  color: #462008; }
+  .character__name-1 {
+    margin-right: 0.8rem;
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-out; }
+  .character__name-2 {
+    margin-left: 0.1rem;
+    animation-name: moveInBottom;
+    animation-duration: 2s;
+    animation-timing-function: ease-out; }
+  .character__name-3 {
+    margin-left: 1rem;
+    animation-name: moveInRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-out; }
+  .character__name-span {
+    font-size: x-small;
+    font-weight: 300;
+    color: #2b1406; }
+
+.navigation__list {
+  list-style-type: none;
+  padding: 2rem 2rem;
+  overflow: hidden;
+  font-size: 1.5rem; }
+  @media (max-width: 37.5em) {
+    .navigation__list {
+      font-size: 1rem; } }
+
+.navigation__item {
+  float: right;
+  margin-left: 1.5rem;
+  padding: 8px;
+  background-color: #e1935f;
+  border-radius: 1.5rem;
+  transition: all 0.5s ease; }
+  .navigation__item:hover {
+    text-decoration: underline;
+    transform: scale(1.15);
+    opacity: 0.8; }
+    @media (max-width: 37.5em) {
+      .navigation__item:hover {
+        transform: scale(1.07); } }
+
+.navigation__link {
+  display: block;
+  text-decoration: none;
+  color: black; }
+
+.page__logoBox {
+  animation-name: fadeIn;
+  animation-name: moveInTop;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in;
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem; }
+  @media (max-width: 37.5em) {
+    .page__logoBox {
+      margin-top: 25rem; } }
+  .page__logoBox-img {
+    width: 20rem; }
+
+.page__searchBox {
+  display: flex;
+  justify-content: center; }
+  .page__searchBox-input {
+    background-color: #f7dec1;
+    border-radius: 1rem;
+    width: 45rem;
+    height: 1.3rem;
+    padding: 10px 30px 10px 10px;
+    background-image: url("../img/search_icon.png");
+    background-size: 1.7rem;
+    background-position: 95% center;
+    background-repeat: no-repeat;
+    border: 1px solid #ccc;
+    outline: none;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif; }
+    @media (max-width: 37.5em) {
+      .page__searchBox-input {
+        width: 32rem;
+        margin-top: 5rem; } }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+.main {
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/sanjob_background.png);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif; }
+  @media (max-width: 37.5em) {
+    .main {
+      background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/back-s.png);
+      background-size: cover;
+      background-position: top; } }
