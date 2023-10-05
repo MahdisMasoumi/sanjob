@@ -13,20 +13,45 @@
       rgba(black, 0),
       rgba(black, 0)
     ),
-    url(../img/sanjob_background.png);
+    url(../img/sanjob.png);
   background-size: cover;
   background-position: top;
   position: relative;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+  @include respond(tab-land) {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(black, 0),
+        rgba(black, 0)
+      ),
+      url(../img/tabland.png);
+  }
+  @include respond(tab-port) {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(black, 0),
+        rgba(black, 0)
+      ),
+      url(../img/tabland.png);
+    height: 56rem;
+  }
+
   @include respond(phone) {
     background-image: linear-gradient(
         to right bottom,
         rgba(black, 0),
         rgba(black, 0)
       ),
-      url(../img/back-s.png);
-    background-size: cover;
-    background-position: top;
+      url(../img/simple.png);
+  }
+  @include respond(mini-phone) {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(black, 0),
+        rgba(black, 0)
+      ),
+      url(../img/simple.png);
   }
 }

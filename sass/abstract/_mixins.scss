@@ -25,20 +25,30 @@ ORDER: Base + typography > general layout + grid > page layout > components
 1em = 16px
 */
 @mixin respond($breakpoint) {
-  @if $breakpoint == phone {
-    @media (max-width: 37.5em) {
+  @if $breakpoint == mini-phone {
+    @media (max-width: 30em) {
       @content;
-    } //600px
+    } //720px
+  }
+  @if $breakpoint == phone {
+    @media (max-width: 53em) {
+      @content;
+    } //800px
   }
   @if $breakpoint == tab-port {
-    @media (max-width: 56.25em) {
+    @media (max-width: 60.25em) {
       @content;
-    } //900px
+    } //964px
   }
   @if $breakpoint == tab-land {
-    @media (max-width: 75em) {
+    @media (max-width: 70em) {
       @content;
-    } //1200px
+    } //1153px
+  }
+  @if $breakpoint == big-land {
+    @media (max-width: 90.5em) {
+      @content;
+    } //1440
   }
   @if $breakpoint == big-desktop {
     @media (min-width: 112.5em) {

@@ -1,0 +1,40 @@
+.footer {
+  background-color: #f3dcc3;
+  height: 2.5rem;
+  @include respond(big-land) {
+    height: 4rem;
+  }
+  @include respond(tab-land) {
+    height: 4rem;
+  }
+  &__logo {
+    display: flex;
+    justify-content: left;
+  }
+
+  &__row {
+    padding: 0.7rem 0.7rem;
+    display: block;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+  }
+  &__link {
+    text-decoration: none;
+    &-img {
+      height: 2rem;
+      @include respond(big-land) {
+        height: 3rem;
+      }
+      @include respond(tab-land) {
+        height: 3rem;
+      }
+      @include respond(mini-phone) {
+        height: 1.5rem;
+      }
+      transition: all 0.5s ease;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

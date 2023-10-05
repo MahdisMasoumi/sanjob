@@ -4,8 +4,21 @@
     padding: 2rem 2rem;
     overflow: hidden;
     font-size: 1.5rem;
+    font-weight: 600;
+
     @include respond(phone) {
-      font-size: 1rem;
+      font-size: 1.3rem;
+    }
+
+    @include respond(big-land) {
+      font-size: 1.6rem;
+    }
+
+    @include respond(tab-port) {
+      font-size: 1.5rem;
+    }
+    @include respond(mini-phone) {
+      font-size: 0.8rem;
     }
   }
 

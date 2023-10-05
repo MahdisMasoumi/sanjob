@@ -60,11 +60,12 @@ ORDER: Base + typography > general layout + grid > page layout > components
     opacity: 1; } }
 
 html {
+  margin: 1rem 1rem;
   font-size: 62.5%; }
-  @media (max-width: 75em) {
+  @media (max-width: 70em) {
     html {
       font-size: 56.25%; } }
-  @media (max-width: 56.25em) {
+  @media (max-width: 60.25em) {
     html {
       font-size: 50%; } }
   @media (min-width: 112.5em) {
@@ -76,8 +77,14 @@ html {
   justify-content: center; }
   .character__row {
     display: block;
-    margin-top: 5rem;
+    margin-top: 4rem;
     margin-right: 2rem; }
+    @media (max-width: 70em) {
+      .character__row {
+        margin-bottom: -1rem; } }
+    @media (max-width: 60.25em) {
+      .character__row {
+        margin-bottom: -1rem; } }
   .character__link {
     text-decoration: none; }
     .character__link-adwin {
@@ -87,6 +94,21 @@ html {
       animation-duration: 2s;
       animation-timing-function: ease;
       animation-name: moveInLeft; }
+      @media (max-width: 53em) {
+        .character__link-adwin {
+          height: 10rem; } }
+      @media (max-width: 90.5em) {
+        .character__link-adwin {
+          height: 12rem; } }
+      @media (max-width: 70em) {
+        .character__link-adwin {
+          height: 12rem; } }
+      @media (max-width: 60.25em) {
+        .character__link-adwin {
+          height: 11rem; } }
+      @media (max-width: 30em) {
+        .character__link-adwin {
+          height: 7rem; } }
       .character__link-adwin:hover {
         transform: scale(1.1); }
     .character__link-qimon {
@@ -96,6 +118,21 @@ html {
       animation-name: moveInBottom;
       animation-duration: 2s;
       animation-timing-function: ease; }
+      @media (max-width: 53em) {
+        .character__link-qimon {
+          height: 10rem; } }
+      @media (max-width: 90.5em) {
+        .character__link-qimon {
+          height: 12rem; } }
+      @media (max-width: 70em) {
+        .character__link-qimon {
+          height: 12rem; } }
+      @media (max-width: 60.25em) {
+        .character__link-qimon {
+          height: 11rem; } }
+      @media (max-width: 30em) {
+        .character__link-qimon {
+          height: 7rem; } }
       .character__link-qimon:hover {
         transform: scale(1.1); }
     .character__link-ricky {
@@ -106,6 +143,21 @@ html {
       animation-name: moveInRight;
       animation-duration: 2s;
       animation-timing-function: ease; }
+      @media (max-width: 53em) {
+        .character__link-ricky {
+          height: 10rem; } }
+      @media (max-width: 90.5em) {
+        .character__link-ricky {
+          height: 12rem; } }
+      @media (max-width: 70em) {
+        .character__link-ricky {
+          height: 12rem; } }
+      @media (max-width: 60.25em) {
+        .character__link-ricky {
+          height: 11rem; } }
+      @media (max-width: 30em) {
+        .character__link-ricky {
+          height: 7rem; } }
       .character__link-ricky:hover {
         transform: scale(1.1); }
 
@@ -119,6 +171,12 @@ html {
   font-size: 1.7rem;
   border: 1px solid #96938f;
   color: #462008; }
+  @media (max-width: 53em) {
+    .character__name {
+      font-size: 1.5rem; } }
+  @media (max-width: 30em) {
+    .character__name {
+      font-size: 1.2rem; } }
   .character__name-1 {
     margin-right: 0.8rem;
     animation-name: moveInLeft;
@@ -137,16 +195,29 @@ html {
   .character__name-span {
     font-size: x-small;
     font-weight: 300;
-    color: #321504; }
+    color: #3d1a06; }
+    @media (max-width: 30em) {
+      .character__name-span {
+        font-size: 1rem; } }
 
 .navigation__list {
   list-style-type: none;
   padding: 2rem 2rem;
   overflow: hidden;
-  font-size: 1.5rem; }
-  @media (max-width: 37.5em) {
+  font-size: 1.5rem;
+  font-weight: 600; }
+  @media (max-width: 53em) {
     .navigation__list {
-      font-size: 1rem; } }
+      font-size: 1.3rem; } }
+  @media (max-width: 90.5em) {
+    .navigation__list {
+      font-size: 1.6rem; } }
+  @media (max-width: 60.25em) {
+    .navigation__list {
+      font-size: 1.5rem; } }
+  @media (max-width: 30em) {
+    .navigation__list {
+      font-size: 0.8rem; } }
 
 .navigation__item {
   float: right;
@@ -159,7 +230,7 @@ html {
     text-decoration: underline;
     transform: scale(1.15);
     opacity: 0.8; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 53em) {
       .navigation__item:hover {
         transform: scale(1.07); } }
 
@@ -176,18 +247,45 @@ html {
   display: flex;
   justify-content: center;
   margin-top: 5rem; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 53em) {
     .page__logoBox {
-      margin-top: 25rem; } }
+      margin-top: 7rem; } }
+  @media (max-width: 60.25em) {
+    .page__logoBox {
+      margin-top: 6rem; } }
+  @media (max-width: 90.5em) {
+    .page__logoBox {
+      margin-top: 4rem; } }
+  @media (max-width: 70em) {
+    .page__logoBox {
+      margin-top: 5rem; } }
+  @media (max-width: 30em) {
+    .page__logoBox {
+      margin-top: 8rem; } }
   .page__logoBox-img {
-    width: 20rem; }
+    width: 25rem; }
+    @media (max-width: 53em) {
+      .page__logoBox-img {
+        width: 17rem; } }
+    @media (max-width: 90.5em) {
+      .page__logoBox-img {
+        width: 24rem; } }
+    @media (max-width: 70em) {
+      .page__logoBox-img {
+        width: 24rem; } }
+    @media (max-width: 60.25em) {
+      .page__logoBox-img {
+        width: 24rem; } }
+    @media (max-width: 30em) {
+      .page__logoBox-img {
+        width: 15rem; } }
 
 .page__searchBox {
   display: flex;
   justify-content: center; }
   .page__searchBox-input {
     background-color: #f7dec1;
-    border-radius: 1rem;
+    border-radius: 2rem;
     width: 45rem;
     height: 1.3rem;
     padding: 10px 30px 10px 10px;
@@ -198,10 +296,52 @@ html {
     border: 1px solid #ccc;
     outline: none;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 90.5em) {
       .page__searchBox-input {
-        width: 32rem;
-        margin-top: 5rem; } }
+        width: 55rem; } }
+    @media (max-width: 70em) {
+      .page__searchBox-input {
+        width: 55rem; } }
+    @media (max-width: 60.25em) {
+      .page__searchBox-input {
+        width: 49rem; } }
+    @media (max-width: 30em) {
+      .page__searchBox-input {
+        width: 22rem; } }
+
+.footer {
+  background-color: #f3dcc3;
+  height: 2.5rem; }
+  @media (max-width: 90.5em) {
+    .footer {
+      height: 4rem; } }
+  @media (max-width: 70em) {
+    .footer {
+      height: 4rem; } }
+  .footer__logo {
+    display: flex;
+    justify-content: left; }
+  .footer__row {
+    padding: 0.7rem 0.7rem;
+    display: block;
+    margin-left: 2rem;
+    margin-bottom: 2rem; }
+  .footer__link {
+    text-decoration: none; }
+    .footer__link-img {
+      height: 2rem;
+      transition: all 0.5s ease; }
+      @media (max-width: 90.5em) {
+        .footer__link-img {
+          height: 3rem; } }
+      @media (max-width: 70em) {
+        .footer__link-img {
+          height: 3rem; } }
+      @media (max-width: 30em) {
+        .footer__link-img {
+          height: 1.5rem; } }
+      .footer__link-img:hover {
+        transform: scale(1.1); }
 
 *,
 *::after,
@@ -212,13 +352,21 @@ html {
 
 .main {
   height: 100vh;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/sanjob_background.png);
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/sanjob.png);
   background-size: cover;
   background-position: top;
   position: relative;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 70em) {
     .main {
-      background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/back-s.png);
-      background-size: cover;
-      background-position: top; } }
+      background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/tabland.png); } }
+  @media (max-width: 60.25em) {
+    .main {
+      background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/tabland.png);
+      height: 56rem; } }
+  @media (max-width: 53em) {
+    .main {
+      background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/simple.png); } }
+  @media (max-width: 30em) {
+    .main {
+      background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/simple.png); } }

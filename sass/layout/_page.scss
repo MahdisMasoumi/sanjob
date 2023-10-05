@@ -7,11 +7,41 @@
   justify-content: center;
   margin-top: 5rem;
   @include respond(phone) {
-    margin-top: 25rem;
+    margin-top: 7rem;
+  }
+
+  @include respond(tab-port) {
+    margin-top: 6rem;
+  }
+
+  @include respond(big-land) {
+    margin-top: 4rem;
+  }
+  @include respond(tab-land) {
+    margin-top: 5rem;
+  }
+  @include respond(mini-phone) {
+    margin-top: 8rem;
   }
 
   &-img {
-    width: 20rem;
+    width: 25rem;
+    @include respond(phone) {
+      width: 17rem;
+    }
+
+    @include respond(big-land) {
+      width: 24rem;
+    }
+    @include respond(tab-land) {
+      width: 24rem;
+    }
+    @include respond(tab-port) {
+      width: 24rem;
+    }
+    @include respond(mini-phone) {
+      width: 15rem;
+    }
   }
 }
 
@@ -20,7 +50,7 @@
   justify-content: center;
   &-input {
     background-color: #f7dec1;
-    border-radius: 1rem;
+    border-radius: 2rem;
     width: 45rem;
     height: 1.3rem;
     padding: 10px 30px 10px 10px;
@@ -32,9 +62,22 @@
     outline: none;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    @include respond(phone) {
-      width: 32rem;
-      margin-top: 5rem;
+
+    @include respond(big-land) {
+      width: 55rem;
+    }
+    @include respond(tab-land) {
+      width: 55rem;
+    }
+    @include respond(tab-port) {
+      width: 49rem;
+    }
+
+    @include respond(min-phone) {
+      width: 30rem;
+    }
+    @include respond(mini-phone) {
+      width: 22rem;
     }
   }
 }
