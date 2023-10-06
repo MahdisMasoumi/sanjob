@@ -17,10 +17,8 @@
   background-size: cover;
   background-position: top;
   position: relative;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-
-  @include respond(tab-land) {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  @include respond(medium-sized) {
     background-image: linear-gradient(
         to right bottom,
         rgba(black, 0),
@@ -28,7 +26,7 @@
       ),
       url(../img/tabland.png);
   }
-  @include respond(tab-port) {
+  @include respond(small-sized) {
     background-image: linear-gradient(
         to right bottom,
         rgba(black, 0),
@@ -38,7 +36,7 @@
     height: 56rem;
   }
 
-  @include respond(phone) {
+  @include respond(tablet) {
     background-image: linear-gradient(
         to right bottom,
         rgba(black, 0),
@@ -46,7 +44,7 @@
       ),
       url(../img/simple.png);
   }
-  @include respond(mini-phone) {
+  @include respond(mobile) {
     background-image: linear-gradient(
         to right bottom,
         rgba(black, 0),

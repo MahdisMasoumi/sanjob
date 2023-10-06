@@ -6,40 +6,37 @@
   display: flex;
   justify-content: center;
   margin-top: 5rem;
-  @include respond(phone) {
-    margin-top: 7rem;
-  }
-
-  @include respond(tab-port) {
-    margin-top: 6rem;
-  }
-
-  @include respond(big-land) {
+  @include respond(large-sized) {
     margin-top: 4rem;
   }
-  @include respond(tab-land) {
+  @include respond(medium-sized) {
     margin-top: 5rem;
   }
-  @include respond(mini-phone) {
+  @include respond(small-sized) {
+    margin-top: 6rem;
+  }
+  @include respond(tablet) {
+    margin-top: 7rem;
+  }
+  @include respond(mobile) {
     margin-top: 8rem;
   }
 
   &-img {
     width: 25rem;
-    @include respond(phone) {
+    @include respond(large-sized) {
+      width: 24rem;
+    }
+    @include respond(medium-sized) {
+      width: 24rem;
+    }
+    @include respond(small-sized) {
+      width: 24rem;
+    }
+    @include respond(tablet) {
       width: 17rem;
     }
-
-    @include respond(big-land) {
-      width: 24rem;
-    }
-    @include respond(tab-land) {
-      width: 24rem;
-    }
-    @include respond(tab-port) {
-      width: 24rem;
-    }
-    @include respond(mini-phone) {
+    @include respond(mobile) {
       width: 15rem;
     }
   }
@@ -62,21 +59,19 @@
     outline: none;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-
-    @include respond(big-land) {
+    @include respond(large-sized) {
       width: 55rem;
     }
-    @include respond(tab-land) {
+    @include respond(medium-sized) {
       width: 55rem;
     }
-    @include respond(tab-port) {
+    @include respond(small-sized) {
       width: 49rem;
     }
-
-    @include respond(min-phone) {
-      width: 30rem;
+    @include respond(tablet) {
+      width: 28rem;
     }
-    @include respond(mini-phone) {
+    @include respond(mobile) {
       width: 22rem;
     }
   }

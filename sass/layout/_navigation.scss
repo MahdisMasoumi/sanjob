@@ -3,42 +3,37 @@
     list-style-type: none;
     padding: 2rem 2rem;
     overflow: hidden;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 600;
-
-    @include respond(phone) {
-      font-size: 1.3rem;
-    }
-
-    @include respond(big-land) {
+    @include respond(large-sized) {
       font-size: 1.6rem;
     }
-
-    @include respond(tab-port) {
+    @include respond(small-sized) {
       font-size: 1.5rem;
     }
-    @include respond(mini-phone) {
+    @include respond(tablet) {
+      font-size: 1.2rem;
+    }
+    @include respond(mobile) {
       font-size: 0.8rem;
     }
   }
-
   &__item {
     float: right;
     margin-left: 1.5rem;
     padding: 8px;
-    background-color: rgb(227, 138, 79);
+    background-color: rgb(214, 137, 85);
     border-radius: 1.5rem;
     transition: all 0.5s ease;
     &:hover {
       text-decoration: underline;
       transform: scale(1.15);
       opacity: 0.8;
-      @include respond(phone) {
+      @include respond(mobile) {
         transform: scale(1.07);
       }
     }
   }
-
   &__link {
     display: block;
     text-decoration: none;

@@ -6,13 +6,10 @@
     display: block;
     margin-top: 4rem;
     margin-right: 2rem;
-    @include respond(phone) {
-      // margin-right: 1rem;
-    }
-    @include respond(tab-land) {
+    @include respond(medium-sized) {
       margin-bottom: -1rem;
     }
-    @include respond(tab-port) {
+    @include respond(small-sized) {
       margin-bottom: -1rem;
     }
   }
@@ -27,22 +24,21 @@
       animation-duration: 2s;
       animation-timing-function: ease;
       animation-name: moveInLeft;
-      @include respond(phone) {
-        height: 10rem;
-      }
-      @include respond(big-land) {
+      @include respond(large-sized) {
         height: 12rem;
       }
-      @include respond(tab-land) {
+      @include respond(medium-sized) {
         height: 12rem;
       }
-      @include respond(tab-port) {
+      @include respond(small-sized) {
         height: 11rem;
       }
-      @include respond(mini-phone) {
+      @include respond(tablet) {
+        height: 10rem;
+      }
+      @include respond(mobile) {
         height: 7rem;
       }
-
       &:hover {
         transform: scale(1.1);
       }
@@ -54,19 +50,19 @@
       animation-name: moveInBottom;
       animation-duration: 2s;
       animation-timing-function: ease;
-      @include respond(phone) {
-        height: 10rem;
-      }
-      @include respond(big-land) {
+      @include respond(large-sized) {
         height: 12rem;
       }
-      @include respond(tab-land) {
+      @include respond(medium-sized) {
         height: 12rem;
       }
-      @include respond(tab-port) {
+      @include respond(small-sized) {
         height: 11rem;
       }
-      @include respond(mini-phone) {
+      @include respond(tablet) {
+        height: 10rem;
+      }
+      @include respond(mobile) {
         height: 7rem;
       }
 
@@ -83,22 +79,21 @@
       animation-name: moveInRight;
       animation-duration: 2s;
       animation-timing-function: ease;
-      @include respond(phone) {
-        height: 10rem;
-      }
-      @include respond(big-land) {
+      @include respond(large-sized) {
         height: 12rem;
       }
-      @include respond(tab-land) {
+      @include respond(medium-sized) {
         height: 12rem;
       }
-      @include respond(tab-port) {
+      @include respond(small-sized) {
         height: 11rem;
       }
-      @include respond(mini-phone) {
+      @include respond(tablet) {
+        height: 10rem;
+      }
+      @include respond(mobile) {
         height: 7rem;
       }
-
       &:hover {
         transform: scale(1.1);
       }
@@ -108,7 +103,6 @@
 
 .character__name {
   text-align: center;
-  font-family: "Times New Roman", Times, serif;
   background-color: rgb(244, 211, 176);
   border-radius: 0.7rem;
   margin-top: 1rem;
@@ -116,13 +110,12 @@
   font-size: 1.7rem;
   border: 1px solid rgb(150, 147, 143);
   color: rgb(70, 32, 8);
-  @include respond(phone) {
+  @include respond(tablet) {
     font-size: 1.5rem;
   }
-  @include respond(mini-phone) {
+  @include respond(mobile) {
     font-size: 1.2rem;
   }
-
   &-1 {
     margin-right: 0.8rem;
     animation-name: moveInLeft;
@@ -145,7 +138,7 @@
     font-size: x-small;
     font-weight: 300;
     color: rgb(61, 26, 6);
-    @include respond(mini-phone) {
+    @include respond(mobile) {
       font-size: 1rem;
     }
   }
