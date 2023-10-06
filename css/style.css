@@ -45,6 +45,15 @@
 html {
   margin: 1rem 1rem;
   font-size: 62.5%; }
+  @media (max-width: 53em) {
+    html {
+      margin: 0; } }
+  @media (max-width: 70em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 60.25em) {
+    html {
+      font-size: 50%; } }
   @media (min-width: 112.5em) {
     html {
       font-size: 75%; } }
@@ -290,18 +299,15 @@ html {
 
 .footer {
   background-color: #f3dcc3;
-  height: 2.5rem; }
-  @media (max-width: 90.5em) {
+  height: 5rem; }
+  @media (max-width: 53em) {
     .footer {
-      height: 4rem; } }
-  @media (max-width: 70em) {
-    .footer {
-      height: 4rem; } }
+      height: 8rem; } }
   .footer__logo {
     display: flex;
     justify-content: left; }
   .footer__row {
-    padding: 0.7rem 0.7rem;
+    padding: 1rem 0.7rem;
     display: block;
     margin-left: 2rem; }
   .footer__link {
@@ -317,7 +323,7 @@ html {
           height: 3rem; } }
       @media (max-width: 30em) {
         .footer__link-img {
-          height: 1.5rem; } }
+          height: 3rem; } }
       .footer__link-img:hover {
         transform: scale(1.1); }
 
