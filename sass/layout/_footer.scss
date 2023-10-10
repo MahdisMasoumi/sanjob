@@ -4,6 +4,9 @@
   @include respond(tablet) {
     height: 8rem;
   }
+  &__need {
+    background-color: #f3dcc3;
+  }
   &__logo {
     display: flex;
     justify-content: left;

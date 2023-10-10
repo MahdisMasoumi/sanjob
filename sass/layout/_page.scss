@@ -76,3 +76,44 @@
     }
   }
 }
+
+.page__animation {
+  display: flex;
+  justify-content: center;
+  &--img {
+    margin-top: 2rem;
+    background-color: rgb(90, 126, 90);
+    border-radius: 5rem;
+    padding: 1rem 1rem;
+    &-ac {
+      width: 4rem;
+      float: left;
+      margin-left: 0rem;
+    }
+    &-sq {
+      width: 4rem;
+      float: right;
+      margin-left: 40rem;
+      transition: all 5s ease;
+      animation: mymove 5s infinite;
+      animation-duration: 10s;
+      animation-timing-function: linear;
+      animation-name: moveLeft;
+      padding-top: 0.7rem;
+    }
+  }
+}
+
+.page__header {
+  display: flex;
+  justify-content: center;
+  &-p {
+    width: 40rem;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    font-size: 3rem;
+    color: rgb(4, 82, 4);
+    text-align: center;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+}

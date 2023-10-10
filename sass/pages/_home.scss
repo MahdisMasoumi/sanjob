@@ -52,3 +52,16 @@
       url(../img/simple.png);
   }
 }
+
+.main-2 {
+  height: 100vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(black, 0),
+      rgba(black, 0)
+    ),
+    url(../img/need.png);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}
