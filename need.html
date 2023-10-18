@@ -8,6 +8,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <title>Needs</title>
   </head>
   <body>
@@ -38,29 +44,62 @@
           </li>
         </ul>
       </div>
-      <section>
-        <div class="page__animation">
-          <div class="page__animation--img">
-            <img src="img/acorn.png" class="page__animation--img-ac" />
-            <img src="img/squirrel.png" class="page__animation--img-sq" />
+      <section class="container">
+        <div class="center">
+          <div class="need__animation--img row">
+            <div class="col">
+              <img src="img/acorn.png" class="need__animation--img-ac" />
+            </div>
+            <div class="col">
+              <img src="img/squirrel.png" class="need__animation--img-sq" />
+            </div>
           </div>
         </div>
-        <div class="page__header">
-          <p class="page__header-p">Tell me your needs</p>
-        </div>
-        <div class="page__searchBox">
-          <form id="searchForm" action="" method="">
-            <input
-              type="text"
-              id="searchInput "
-              placeholder="Search..."
-              name="search"
-              class="page__searchBox-input"
-            />
-          </form>
+        <div class="row need">
+          <div class="col need__animation">
+            <div class="need__header">
+              <p class="need__header-p">
+                I'm Ricky <br /><span class="need__header-p-span"
+                  >Tell me your needs</span
+                >
+              </p>
+            </div>
+            <div class="need__searchBox">
+              <form id="searchForm" action="" method="">
+                <input
+                  type="text"
+                  id="searchInput"
+                  placeholder="Search..."
+                  name="search"
+                  class="need__searchBox-input"
+                />
+              </form>
+            </div>
+          </div>
+          <div class="col need__ricky">
+            <img src="img/ricky-back.png" class="need__ricky-image" />
+          </div>
         </div>
       </section>
     </main>
+    <div class="post">
+      <button id="openPopupButton" class="post__button">Create New Post</button>
+      <div id="popup" class="post__popup">
+        <div class="post__popup-content">
+          <span class="post__popup-close" id="closePopupButton">&times;</span>
+          <h2>Create a New Post</h2>
+          <textarea
+            class="post__popup-textarea"
+            id="postContent"
+            placeholder="Enter your post here..."
+          ></textarea>
+          <button id="submitPost" class="post__popup-submit">Submit</button>
+        </div>
+      </div>
+    </div>
+    <div class="center">
+      <div id="postContainer" class="post__container"></div>
+    </div>
     <footer class="footer__need">
       <div class="footer__logo">
         <div class="footer__row">
@@ -82,5 +121,11 @@
         </div>
       </div>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
   </body>
 </html>

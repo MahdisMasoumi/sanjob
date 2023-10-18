@@ -63,13 +63,36 @@
   }
 }
 
-@keyframes moveLeft {
-  100% {
-    opacity: 1;
-    transform: translateX(-40rem);
+@keyframes mymove {
+  from {
+    left: 15rem;
   }
-  0% {
-    opacity: 1;
-    transform: translate(0);
+  to {
+    left: -17rem;
+  }
+}
+@keyframes myMovexl {
+  from {
+    left: 30rem;
+  }
+  to {
+    left: -32rem;
+  }
+}
+@keyframes myMovemd {
+  from {
+    left: 10rem;
+  }
+  to {
+    left: -13.5rem;
+  }
+}
+
+@keyframes colorChange {
+  from {
+    background-color: rgb(90, 126, 90);
+  }
+  to {
+    background-color: #e0e389;
   }
 }
